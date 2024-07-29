@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+  row-gap: 40px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+.details-card {
+  width: 50%;
+}
+
+.country-desc {
+  font-size: 42px;
+}
+
+.card {
+  width: 30%;
+}
+
+@media (width < 900px) {
+  .country-desc {
+    font-size: 26px;
+  }
+
+  .details-card {
+    width: 75%;
+  }
+  
+}
+
+
+@media (width < 650px) {
+  
+  .card {
+    width: 45%;
+  }
+  
+}
